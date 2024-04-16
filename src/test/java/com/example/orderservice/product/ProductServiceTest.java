@@ -1,26 +1,22 @@
 package com.example.orderservice.product;
 
-import com.sun.source.tree.AssertTree;
+import com.example.orderservice.ApiTest;
+import com.example.orderservice.DatabaseCleanup;
 import io.restassured.RestAssured;
 import io.restassured.response.ExtractableResponse;
 import io.restassured.response.Response;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 
-import java.awt.*;
-
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-@SpringBootTest
-class ProductServiceTest {
-
-    @Autowired
-    private ProductService productService;
-
-
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+class ProductServiceTest extends ApiTest {
 
     @Test
     void 상품등록() {
