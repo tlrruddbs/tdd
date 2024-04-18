@@ -28,7 +28,13 @@ class OrderApiTest extends ApiTest {
     void 상품주문() {
         ProductSteps.상품등록요청(ProductSteps.상품등록요청_생성());
         final CreateOrderRequest request = 상품주문요청_생성();
+        ExtractableResponse<Response> response = 상품주문요청(request);
 
+        assertThat(response.statusCode()).isEqualTo(HttpStatus.CREATED.value());
+
+    }
+
+    private static ExtractableResponse<Response> 상품주문요청(CreateOrderRequest request) {
         ExtractableResponse<Response> response = RestAssured.given().log().all()
                 .contentType(MediaType.APPLICATION_JSON_VALUE)
                 .body(request)
@@ -36,9 +42,7 @@ class OrderApiTest extends ApiTest {
                 .post("/orders")
                 .then()
                 .log().all().extract();
-
-        assertThat(response.statusCode()).isEqualTo(HttpStatus.CREATED.value());
-
+        return response;
     }
 
     private static CreateOrderRequest 상품주문요청_생성() {
