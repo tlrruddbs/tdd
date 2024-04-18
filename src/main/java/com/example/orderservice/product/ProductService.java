@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 //@RequestMapping("/products")
-class ProductService {
+public class ProductService {
 
     private final ProductPort productPort;
 
