@@ -1,5 +1,8 @@
 package com.example.orderservice.product;
 
+import com.example.orderservice.product.application.service.GetProductResponse;
+import com.example.orderservice.product.application.service.ProductService;
+import com.example.orderservice.product.application.service.UpdateProductRequest;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.junit.jupiter.MockitoExtension;

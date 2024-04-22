@@ -1,9 +1,9 @@
-package com.example.orderservice.payment;
+package com.example.orderservice.payment.adapter;
 
-import com.example.orderservice.order.Order;
-import com.example.orderservice.order.OrderRepository;
-import com.example.orderservice.product.DiscountPolicy;
-import com.example.orderservice.product.Product;
+import com.example.orderservice.order.domain.Order;
+import com.example.orderservice.order.adapter.OrderRepository;
+import com.example.orderservice.payment.domain.Payment;
+import com.example.orderservice.payment.PaymentPort;
 import org.springframework.stereotype.Component;
 
 @Component

@@ -1,20 +1,15 @@
 package com.example.orderservice.payment;
 
 import com.example.orderservice.ApiTest;
-import com.example.orderservice.order.OrderService;
 import com.example.orderservice.order.OrderSteps;
-import com.example.orderservice.product.ProductService;
+import com.example.orderservice.payment.application.service.PaymentRequst;
 import com.example.orderservice.product.ProductSteps;
 import io.restassured.RestAssured;
 import io.restassured.response.ExtractableResponse;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
-
-import java.awt.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

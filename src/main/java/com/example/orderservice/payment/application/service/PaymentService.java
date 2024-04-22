@@ -1,6 +1,8 @@
-package com.example.orderservice.payment;
+package com.example.orderservice.payment.application.service;
 
-import com.example.orderservice.order.Order;
+import com.example.orderservice.order.domain.Order;
+import com.example.orderservice.payment.domain.Payment;
+import com.example.orderservice.payment.port.PaymentPort;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
