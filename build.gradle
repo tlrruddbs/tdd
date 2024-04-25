@@ -24,6 +24,7 @@ dependencies {
 	implementation 'com.google.guava:guava:31.1-jre'
     testImplementation 'org.projectlombok:lombok:1.18.28'
 	testImplementation 'org.projectlombok:lombok:1.18.28'
+	testImplementation 'junit:junit:4.13.1'
 
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'com.h2database:h2'

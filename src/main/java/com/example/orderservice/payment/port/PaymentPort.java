@@ -3,7 +3,7 @@ package com.example.orderservice.payment.port;
 import com.example.orderservice.order.domain.Order;
 import com.example.orderservice.payment.domain.Payment;
 
-interface PaymentPort {
+public interface PaymentPort {
     Order getOrder(Long aLong);
 
 //    void pay(Payment payment);

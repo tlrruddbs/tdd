@@ -3,7 +3,7 @@ package com.example.orderservice.payment.adapter;
 import com.example.orderservice.order.domain.Order;
 import com.example.orderservice.order.adapter.OrderRepository;
 import com.example.orderservice.payment.domain.Payment;
-import com.example.orderservice.payment.PaymentPort;
+import com.example.orderservice.payment.port.PaymentPort;
 import org.springframework.stereotype.Component;
 
 @Component

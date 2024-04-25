@@ -3,7 +3,7 @@ package com.example.orderservice.product.application.service;
 import com.example.orderservice.product.domain.DiscountPolicy;
 import org.springframework.util.Assert;
 
-record GetProductResponse(
+public record GetProductResponse(
         Long id,
         String name,
         int price,
